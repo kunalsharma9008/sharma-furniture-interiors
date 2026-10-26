@@ -1,0 +1,87 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: 'class',
+  content: [
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "surface": "#FAF7F1",
+        "surface-dim": "#E0D9D4",
+        "surface-bright": "#FFF8F4",
+        "surface-container-lowest": "#FFFFFF",
+        "surface-container-low": "#FAF2ED",
+        "surface-container": "#F4ECE7",
+        "surface-container-high": "#EEE7E2",
+        "surface-container-highest": "#E8E1DC",
+        "on-surface": "#1E1B18",
+        "on-surface-variant": "#444840",
+        "primary": "#4D6246",
+        "on-primary": "#FFFFFF",
+        "primary-container": "#657B5D",
+        "on-primary-container": "#F8FFF0",
+        "primary-fixed": "#D1EAC6",
+        "on-primary-fixed": "#0D200A",
+        "secondary": "#745A39",
+        "on-secondary": "#FFFFFF",
+        "secondary-container": "#FEDAB0",
+        "on-secondary-container": "#795E3D",
+        "secondary-fixed": "#FFDDB7",
+        "secondary-fixed-dim": "#E4C199",
+        "outline": "#747870",
+        "outline-variant": "#C4C8BE",
+        "sage": "#B9C9B1",
+        "muted-wood": "#C5A47E",
+        "ivory": "#FAF7F1",
+        "warm-beige": "#E9DFD0"
+      },
+      fontFamily: {
+        "display": ["var(--font-playfair)", "Playfair Display", "serif"],
+        "body": ["var(--font-plus-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+        "display-lg": ["var(--font-playfair)", "Playfair Display", "serif"],
+        "display-md": ["var(--font-playfair)", "Playfair Display", "serif"],
+        "headline-lg": ["var(--font-playfair)", "Playfair Display", "serif"],
+        "headline-md": ["var(--font-playfair)", "Playfair Display", "serif"],
+        "headline-sm": ["var(--font-playfair)", "Playfair Display", "serif"],
+        "title-lg": ["var(--font-plus-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+        "title-md": ["var(--font-plus-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+        "body-lg": ["var(--font-plus-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+        "body-md": ["var(--font-plus-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+        "body-sm": ["var(--font-plus-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+        "label-md": ["var(--font-plus-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+        "label-sm": ["var(--font-plus-jakarta)", "Plus Jakarta Sans", "sans-serif"]
+      },
+      fontSize: {
+        "display-lg": ["56px", { lineHeight: "68px", letterSpacing: "-0.02em", fontWeight: "400" }],
+        "display-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "400" }],
+        "display-md": ["42px", { lineHeight: "52px", letterSpacing: "-0.015em", fontWeight: "400" }],
+        "display-md-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "400" }],
+        "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "500" }],
+        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "500" }],
+        "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }],
+        "title-lg": ["18px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600" }],
+        "title-md": ["16px", { lineHeight: "24px", fontWeight: "600" }],
+        "body-lg": ["18px", { lineHeight: "30px", fontWeight: "400" }],
+        "body-md": ["15px", { lineHeight: "24px", fontWeight: "400" }],
+        "body-sm": ["13px", { lineHeight: "20px", fontWeight: "400" }],
+        "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.08em", fontWeight: "600" }],
+        "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.1em", fontWeight: "600" }]
+      },
+      spacing: {
+        "space-xs": "0.25rem",
+        "space-sm": "0.5rem",
+        "space-md": "1rem",
+        "space-lg": "1.5rem",
+        "space-xl": "2.5rem",
+        "margin": "4rem",
+        "margin-tablet": "2rem",
+        "margin-mobile": "1.25rem"
+      }
+    }
+  },
+  plugins: [],
+};

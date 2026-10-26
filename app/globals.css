@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #FAF7F1;
+    color: #1E1B18;
+    overflow-x: hidden;
+  }
+
+  /* Custom focus outlines for accessibility */
+  a:focus-visible, 
+  button:focus-visible, 
+  input:focus-visible, 
+  select:focus-visible, 
+  textarea:focus-visible {
+    outline: 2px solid #4D6246;
+    outline-offset: 2px;
+  }
+}
+
+/* Service card hover effects */
+.service-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px -8px rgba(35, 32, 29, 0.08), 0 4px 12px -2px rgba(35, 32, 29, 0.04);
+  border-color: #C5A47E;
+}
+
+/* Subtle hero video treatment */
+.hero-video {
+  filter: brightness(0.72) contrast(1.05);
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .hero-video {
+    display: none !important;
+  }
+  .hero-fallback-img {
+    display: block !important;
+  }
+  .service-card:hover {
+    transform: none !important;
+  }
+}
+
+/* Material Symbols sizing helper */
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+}
