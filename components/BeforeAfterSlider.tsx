@@ -112,14 +112,13 @@ export default function BeforeAfterSlider() {
         {/* "Before" Image (Foreground Clipped) */}
         <div
           className="absolute inset-0 h-full overflow-hidden"
-          style={{ width: `${sliderPosition}%` }}
+          style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
           <div
-            className="absolute inset-0 w-full h-full bg-no-repeat min-w-[100%]"
+            className="absolute inset-0 w-full h-full bg-no-repeat"
             role="img"
             aria-label="A room before the work began."
             style={{
-              width: containerRef.current ? `${containerRef.current.offsetWidth}px` : '100%',
               backgroundImage: "url('/images/before-after-room-20261026.png')",
               backgroundSize: '100% auto',
               backgroundPosition: 'center 10%',
