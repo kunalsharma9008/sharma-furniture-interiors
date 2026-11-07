@@ -170,54 +170,35 @@ export default function ContactSection({
                 </div>
               </div>
 
-              {/* How It Works — no physical studio implied */}
+              {/* Map for the business location */}
               <div className="pt-6 mt-1 border-t border-surface-variant/20">
-                <span className="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed font-semibold">
-                  How It Works
-                </span>
-
-                <div className="mt-5 space-y-5">
-                  <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-primary text-[24px] mt-0.5">
-                      chat
+                <div className="flex items-center justify-between gap-3 mb-4">
+                  <div>
+                    <span className="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed font-semibold">
+                      Find Us
                     </span>
-                    <div>
-                      <span className="font-title-md text-title-md text-surface block font-semibold">
-                        01 — Discuss Your Ideas
-                      </span>
-                      <p className="font-body-sm text-body-sm text-surface-variant mt-1 leading-relaxed">
-                        Tell us what you have in mind over WhatsApp or phone.
-                      </p>
-                    </div>
+                    <p className="font-title-md text-title-md text-surface mt-1 font-semibold">
+                      Sharma Furniture Interior
+                    </p>
                   </div>
-
-                  <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-primary text-[24px] mt-0.5">
-                      architecture
-                    </span>
-                    <div>
-                      <span className="font-title-md text-title-md text-surface block font-semibold">
-                        02 — Plan Your Space
-                      </span>
-                      <p className="font-body-sm text-body-sm text-surface-variant mt-1 leading-relaxed">
-                        Discuss layouts, materials, furniture, and design options.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-primary text-[24px] mt-0.5">
-                      chair
-                    </span>
-                    <div>
-                      <span className="font-title-md text-title-md text-surface block font-semibold">
-                        03 — Bring It to Life
-                      </span>
-                      <p className="font-body-sm text-body-sm text-surface-variant mt-1 leading-relaxed">
-                        Move forward with a plan tailored to your project.
-                      </p>
-                    </div>
-                  </div>
+                  <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=18.5245906%2C73.970175"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shrink-0 rounded-md border border-surface-variant/30 px-3 py-2 text-xs font-semibold text-surface transition-colors hover:border-primary hover:text-primary"
+                  >
+                    Get Directions
+                  </a>
+                </div>
+                <div className="h-56 overflow-hidden rounded-xl border border-surface-variant/20 bg-surface md:h-64">
+                  <iframe
+                    title="Map showing Sharma Furniture Interior in Pune"
+                    src="https://maps.google.com/maps?q=18.5245906%2C73.970175&z=16&output=embed"
+                    className="h-full w-full border-0"
+                    loading="lazy"
+                    allowFullScreen
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </div>
               </div>
             </div>
